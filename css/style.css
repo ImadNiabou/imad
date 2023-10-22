@@ -4,13 +4,25 @@
 
 a{
     text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: roboto, sans-serif;
+}
+
+/* Header */
+
+.main__nav{
+    display: flex;
 }
 .header__wrapper{
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     max-width: 1200px;
     min-width: 1000px;
     margin: 0 auto;
-    display: flex;
+   
 
 }
 
@@ -18,4 +30,34 @@ a{
     width: 900px;
     display: flex;
     justify-content: space-evenly;
+}
+
+/* Main */
+
+.main__section{
+   background-image: url(../img/2.jpg);
+   margin: 0 auto;
+   max-width: 1200px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+
+.main__section h1{
+    color: #fff;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 4.4em;
+    padding: 15px 50px;
+    height: 70vh;
+}
+.main__section p{
+    color: #fff;
+    margin-left: 56px;
+    font-size: 1.5em;
 }

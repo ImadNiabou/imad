@@ -14,25 +14,68 @@ body{
 
 .main__nav{
     display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    align-items: center;
 }
 .header__wrapper{
     display: flex;
     justify-content: space-between;
     padding: 20px;
     max-width: 1200px;
-    min-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
    
 
 }
 
+.main__nav--right i{
+    margin-right: 10px;
+}
 .main__nav ul{
-    width: 900px;
     display: flex;
     justify-content: space-evenly;
 }
 
+.main__nav li{
+    display: inline-block;
+    margin-right: 38px;
+}
+
+.main__nav a{
+    position: relative;
+    text-transform: uppercase;
+    padding: 6px 0;
+}
+
+.main__nav a::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    transition: 0.5s transform ease;
+    transform: scale3d(0,1,1);
+    transform-origin: 0 50%;
+  }
+  .main__nav a:hover::before{
+    transform: scale3d(1,1,1);
+  }
+
+  .main__nav a::before{
+    transform-origin: 50% 50%;
+    background: #000;
+  }
+
+
 /* Main */
+.main__wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 1000px;
+}
 
 .main__section{
    background-image: url(../img/2.jpg);
@@ -41,10 +84,10 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
    height: 100vh;
-    display: flex;
-    padding: 4px;
-    justify-content: center;
-    flex-direction: column;
+   display: flex;
+   padding: 4px;
+   justify-content: center;
+   flex-direction: column;
  
 }
 
@@ -60,4 +103,32 @@ body{
     color: #fff;
     margin-left: 56px;
     font-size: 1.5em;
+}
+
+.section__watches h2{
+    padding: 30px;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.section__watches{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70vh;
+    background: #000;
+}
+
+.watches{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.cards--1 figcaption img{
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
 }

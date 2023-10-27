@@ -5,6 +5,7 @@
 a{
     text-decoration: none;
     color: inherit;
+    
 }
 body{
     font-family: roboto, sans-serif;
@@ -71,6 +72,7 @@ body{
 
 
 /* Main */
+
 .main__wrapper{
     max-width: 1200px;
     margin: 0 auto;
@@ -97,7 +99,7 @@ body{
     font-weight: bold;
     font-size: 4.4em;
     padding: 15px 50px;
-    height: 70vh;
+    height: 100vh;
 }
 .main__section p{
     color: #fff;
@@ -106,29 +108,70 @@ body{
 }
 
 .section__watches h2{
-    padding: 30px;
+    padding: 40px 50px;
     font-size: 2.4em;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 40px;
 }
 
 .section__watches{
-
     max-width: 1200px;
     margin: 0 auto;
-    height: 70vh;
-    background: #000;
+    height: 80vh;
+    background: #0e0e0e;
 }
 
 .watches{
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 30vh;
+    padding: 0px 12px;
+}
+
+.cards--1{
+    margin: 4px auto;
 }
 
 .cards--1 figcaption img{
-    width: 180px;
-    height: 250px;
+    width: 160px;
+    height: 260px;
+    margin: 10px;
     border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+.section__videp--wrapper
+
+.cards--1 figcaption{
+    text-align: center;
+}
+
+.cards--1 a{
+    color: #fff;
+}
+.section__wrapper{
+    max-width: 1200px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.section__watches figcaption a{
+    color: #fff;
+}
+.section__watches figcaption p{
+    color: yellow;
+    color: #fff;
+}
+
+/* Video */
+
+.section__videp--wrapper{
+    max-width: 1200px;
+    width: 1000px;
+}
+
+#video--box video{
+    width: 1000px;
+    margin: 0 auto;
 }

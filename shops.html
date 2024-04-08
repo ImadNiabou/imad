@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Shops</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="h-watches">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <div class="title">FIND US HERE</div>
+            <div class="icon-cart" id="cart">
+                <a href="watches.html#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <span>0</span>
+            </div>
+        </header>
+    </div>
+    <main>
+        <section class="wrapper">
+            <div class="shops">
+                <h1 class="shops-h1">OUR SHOPS</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">LONDON</a></li>
+                        <li><a href="#">BARCELONA</a></li>
+                        <li><a href="#">PARIS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <div id="shops"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        // shops ajax 
+            $(document).ready(function(){
+                $(document).ajaxSend(function(){
+                    $("#shops").html('<div id="divcargando"><img src="img/cargando.gif" alt="cargando"><span>Loading...</span></div>');
+                });
+
+                $("#shops").load("shop1.html");
+
+                $("li>a").each(function(index) {
+                    $(this).click(function(){
+                        event.preventDefault();
+                        var indice = index+1;
+                        console.log(indice)
+                        $("#shops").load("shop"+indice+".html");
+                    });
+                })
+
+       
+
+        });
+    </script>
+</body>
+</html>

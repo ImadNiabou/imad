@@ -3,85 +3,432 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watches</title>
+    <title>Smart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet"
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <!-- bxSlider CSS file -->
+<link href="Slider-JQuery/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="header__wrapper">
-            <nav class="main__nav">
-                <div class="header__logo">
-                    <p>Watches_Logo</p>
-                </div>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Watches</a></li>
-                    <li><a href="#">Boutiques</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="main__nav--right">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-            </nav>
+        <div class="wrapper">                  
+              <!-- small menu -->
+              <div class="xs-menu-cont">
+              <a id="menutoggle"><i class="fa-solid fa-bars"></i></i> </a>
+                  <nav class="xs-menu displaynone">
+                      <ul>
+                          <li>
+                            <a href="#about">About</a>
+                          </li>
+                          <li>
+                            <a href="watches.html">Watches</a>
+                          </li>
+                          <li>
+                            <a href="shops.html">Shops</a></li>
+                          </li>
+                          <li>
+                            <a href="contact.html">Contact</a></li>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+              <nav class="menu">
+                <a href="index.html" id="logo"><img src="img/logo.svg" alt="logo"></a>
+                  <ul>
+                      <li>
+                        <a href="#about">ABOUT</a>
+                      </li>
+                      <li>
+                        <a href="watches.html">WATCHES</a>
+                      </li>
+                      <li>
+                        <a href="shops.html">SHOPS</a>
+                      </li>
+                      <li>
+                        <a href="contact.html">CONTACT</a></li>
+                      </li>
+                  </ul>
+                  <a href="watches.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+              </nav>
+          </div>
         </div>
     </header>
     <main>
-        <div class="main__wrapper">
+        <div class="wrapper">    
+            <div class="demo-cont">
+                <!-- slider start -->
+                <div class="fnc-slider example-slider">
+                  <div class="fnc-slider__slides">
+                    <!-- slide start -->
+                    <div class="fnc-slide m--blend-green m--active-slide">
+                      <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                          <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                          <h2 class="fnc-slide__heading">
+                            <div class="fnc-slide__heading-line">
+                              <span>Smart</span>
+                            </div>
+                            <div class="fnc-slide__heading-line">
+                              <span>Watch s</span>
+                            </div>
+                          </h2>
+                          <button type="button" class="fnc-slide__action-btn">
+                            BUY NOW
+                            <span data-text="Credits">BUY NOW</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide end -->
+                    <!-- slide start -->
+                    <div class="fnc-slide m--blend-dark">
+                      <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                          <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                          <h2 class="fnc-slide__heading">
+                            <div class="fnc-slide__heading-line">
+                              <span>Smart</span>
+                            </div>
+                            <div class="fnc-slide__heading-line">
+                              <span>Moto</span>
+                            </div>
+                          </h2>
+                          <button type="button" class="fnc-slide__action-btn">
+                            BUY NOW
+                            <span data-text="Credits">BUY NOW</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide end -->
+                    <!-- slide start -->
+                    <div class="fnc-slide m--blend-red">
+                      <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                          <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                          <h2 class="fnc-slide__heading">
+                            <div class="fnc-slide__heading-line">
+                              <span>Smart</span>
+                            </div>
+                            <div class="fnc-slide__heading-line">
+                              <span>X-10</span>
+                            </div>
+                          </h2>
+                          <button type="button" class="fnc-slide__action-btn">
+                            BUY NOW
+                            <span data-text="Credits">BUY NOW</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide end -->
+                    <!-- slide start -->
+                    <div class="fnc-slide m--blend-blue">
+                      <div class="fnc-slide__inner">
+                        <div class="fnc-slide__mask">
+                          <div class="fnc-slide__mask-inner"></div>
+                        </div>
+                        <div class="fnc-slide__content">
+                          <h2 class="fnc-slide__heading">
+                            <div class="fnc-slide__heading-line">
+                              <span>Smart</span>
+                            </div>
+                            <div class="fnc-slide__heading-line">
+                              <span>Garmin</span>
+                            </div>
+                          </h2>
+                          <button type="button" class="fnc-slide__action-btn">
+                            BUY NOW
+                            <span data-text="Credits">BUY NOW</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide end -->
+                  </div>
+                  <nav class="fnc-nav">
+                    <div class="fnc-nav__bgs">
+                      <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                      <div class="fnc-nav__bg m--navbg-dark"></div>
+                      <div class="fnc-nav__bg m--navbg-red"></div>
+                      <div class="fnc-nav__bg m--navbg-blue"></div>
+                    </div>
+                    <div class="fnc-nav__controls">
+                      <button class="fnc-nav__control">
+                        Smart Watch S
+                        <span class="fnc-nav__control-progress"></span>
+                      </button>
+                      <button class="fnc-nav__control">
+                        Smart Moto
+                        <span class="fnc-nav__control-progress"></span>
+                      </button>
+                      <button class="fnc-nav__control">
+                        Smart x-10
+                        <span class="fnc-nav__control-progress"></span>
+                      </button>
+                      <button class="fnc-nav__control">
+                        Smart Garmin
+                        <span class="fnc-nav__control-progress"></span>
+                      </button>
+                    </div>
+                  </nav>
+                </div>
+                <!-- slider end -->
+                <div class="demo-cont__credits">
+                  <div class="demo-cont__credits-close"></div>
+                  <h2 class="demo-cont__credits-heading">WELCOME TO SMART</h2>
+                  <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="demo-cont__credits-img" />
+                  <h3><a href="watches.html"  target="_blank" class="demo-cont__credits-link">ALL WATCHES</a></h3>
+                  <a href="shops.html" target="_blank" class="demo-cont__credits-link">SHOPS </a>
+                  <a href="contact.html" target="_blank" class="demo-cont__credits-link btn">CONTACT US </a>
+
+                  <h2 class="demo-cont__credits-heading">Smart</h2>
+                  <div class="colorful-switch">
+                    <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
+                    <label class="colorful-switch__label" for="colorful-switch-cb">
+                      <span class="colorful-switch__bg"></span>
+                      <span class="colorful-switch__dot"></span>
+                      <span class="colorful-switch__on">
+                        <span class="colorful-switch__on__inner"></span>
+                      </span>
+                      <span class="colorful-switch__off"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- arrow top -->
+        <a href="#" class="top"><i class="fa-solid fa-arrow-up fa-beat-fade"></i></a>
             <section class="main__section">
-                <p>Smart Watch</p>
-                <h1>CUSTOM<br>WATCHES<br>FOR ANY<br>OCCASION</h1>
+                <div class="left-side">
+                    <h1><span>CUSTOM</span><br>WATCHES<br>FOR ANY<br>OCCASION</h1>
+                    <p id="PSmart">Smartwatch world</p>
+                    <button class="button"><a href="watches.html">Add to cart</a></a></button>
+                </div>
+                <div class="right-side">
+                    <div class="withe-circle"></div>
+                    <img src="img/2.2.svg" alt="watch" class="smart-1">
+                </div>  
             </section>
-            <section class="section__watches">
-                <div class="section__wrapper">
-                    <article>
-                        <h2>EXPLORE WATCHES</h2>
-                        <div class="watches">
-                            <figure class="cards--1">
-                                <figcaption><a href="#"><img src="img/5.jpg" alt="5"></a>
-                                <a href="#">Smart watch</a>
-                                </figcaption>
-                            </figure>
-                            <figure class="cards--1">
-                                <figcaption><a href="#"><img src="img/6.jpg" alt="6"></a>
-                                <a href="#">Smart watch</a>
-                                </figcaption>
-                            </figure>
-                            <figure class="cards--1">
-                                <figcaption><a href="#"><img src="img/7.jpg" alt="7"></a>
-                                <a href="#">Smart watch</a>
-                                </figcaption>
-                            </figure>
-                            <figure class="cards--1">
-                                <figcaption><a href="#"><img src="img/8.jpg" alt="8"></a>
-                                <a href="#">Smart watch</a>
-                                </figcaption>
-                            </figure>
-                            <figure class="cards--1">
-                                <figcaption><a href="#"><img src="img/9.jpg" alt="9"></a>
-                                <a href="#">Smart watch</a>
-                                </figcaption>
-                            </figure>
+            <section>
+                <div class="wrapper">
+                    <article class="article-about" id="about">
+                        <div class="about-box">
+                            <h2>ABOUT US</h2>
+                            <h3>The best choice for you</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus inventore debitis obcaecati a quae. Repudiandae repellendus asperiores veritatis pariatur magnam, voluptatum dolor adipisci magni est voluptates ut. Dolor velit ab, libero magnam eveniet. Porro, praesentium modi minima quibusdam illum iure quisquam, doloremque aliquam, hic officiis sit atque error illo eius ipsum commodi similique quaerat ex recusandae quo. Laboriosam cumque explicabo eaque sed, quam eligendi placeat! Eius aspernatur.</p>
+                            <div class="hide" id="hideText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere dolorum accusamus odit dolore. Laboriosam, laudantium nulla doloribus quaerat quasi reprehenderit facere cum ipsa earum fugiat temporibus quis, placeat quibusdam vitae saepe minus, praesentium soluta cupiditate modi
+                                 reiciendis? In, vel facilis cupiditate harum tenetur eius laboriosam ipsum inventore. Soluta totam vero deleniti? Nihil, nemo enim voluptatum alias neque esse facere similique perferendis earum accusantium fugiat vero atque aperiam tempore impedit aliquid.</div>
+                            <!-- <a class="btn" id="hideText__btn" href="#">See more</a> -->
+                            <button class="cta" id="hideText__btn">
+                              <span>See more</span>
+                              <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                              </svg>
+                            </button>
                         </div>
                     </article>
                 </div>
             </section>
-            <section>
-                <div class="section__videp--wrapper">
-                    <div id="video--box">
-                        <video loop controls>
-                           <source src="video/pexels-rodnae-productions-7947487 (720p).mp4">
-                        </video>
-                    </div>
+            <section class="section__watches">
+                <div class="wrapper">
+                    <article class="cards--article">
+                        <h2>EXPLORE WATCHES</h2>
+                            <div class="purple-circle"></div>
+                            <div class="purple-circle2"></div>
+                            <div class="purple-circle3"></div>
+                            <ul class="bxslider">
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="img-1">
+                                  <div class="img-wrapper">
+                                    <h3>Smart xs</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                    <a href="watches.html"><button class="btn-1 fill">BUY NOW</button></a>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                    </article>
                 </div>
             </section>
+            <section>
+              <div class="wrapper">
+                <div class="newsletter-form">
+                  <p>NEWSLETTER</p>
+                  <h2 class="newslettter-p">KEEP ME UPDATED</h2>
+                  <p>To get a free and amazing offers and other cool things stay with us and please suscribe us </p>
+                  <h3>SUSCRIBE NOW</h3>
+                <form class="form-suscribe" id="newsletterForm" onsubmit="validateForm(event)">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <div id="nameError" class="error-message"></div>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required onblur="validateForm(event)">
+                  <div id="emailError" class="error-message"></div>
+                  <button class="btn-form" type="submit">Subscribe</button>
+                  <p id="successful" class="successful"></p>
+                </form>
+                </div>
+              </div>
+            </section>
+            <div class="wrapper">
+              
+              <div id="video--box">
+                <div class="video--section">
+                  <h2>OUR VALUES</h2>
+                  <p>Exploring every detail of innovation, Smart’s world is made of groundbreaking Craftsmanship, Partnerships and News & Events.</p>
+                </div>
+                  <video loop controls poster="img/poster.jpg" controls>
+                     <source src="video/video.1.mp4">
+                  </video>
+              </div>
         </div>
     </main>
+
+    <footer>
+        <section>
+            <div class="w-footer">
+              <div class="social">
+                  <ul class="footer-social-media">
+                    <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                    <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                    <li><i class="fa-brands fa-snapchat fa-lg"></i></li>
+                    <li><i class="fa-brands fa-x-twitter fa-lg"></i></li>
+                    <li><i class="fa-brands fa-pinterest fa-lg"></i></li>
+                    <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+                </ul>
+              </div>
+              <div class="footer-bottom wrapper">
+                <div class="footer-logo">
+                  <img src="img/logo2.svg" class="footer-logo-svg" alt="logo" />
+                  <p>Our vision is to make the <br/>
+                  best psmartwatches <br/>
+                  for people</p>
+              </div>
+              <div>              
+                  <ul>
+                      <li><h3>Information</h3></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Watches</a></li>
+                      <li><a href="#">Shops</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><h3>Helpful Links</h3></li>
+                      <li><a href="#">Destination</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Travel & Condition</a></li>
+                      <li><a href="#">Privacy</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><h3>Contact Details</h3></li>
+                      <li><a href="#">+51 266 766 288</a></li>
+                      <li><a href="#">smart-1-2@gmail.com</a></li>
+                      <li><a href="#">Smart & Condition</a></li>
+                      <li><a href="#">www.imadniabou.com</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="copy-right">
+            <p>&copy; 2024 Smart - All rights reserved</p>
+          </div>
+              </div>
+       </section>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/newsLetter.js"></script>
+    <!-- jQuery library -->
+<script src="Slider-JQuery/jquery-3.1.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="Slider-JQuery/jquery.bxslider.js"></script>
+
 </body>
 </html>

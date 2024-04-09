@@ -34,28 +34,28 @@ html {
   background-color: #6d9b98;
 }
 .fnc-slider .m--blend-green .fnc-slide__mask-inner {
-  background-color: #42605E;
+  background-color: #291b26f7;
 }
 .fnc-slider .m--navbg-green {
-  background-color: #42605E;
+  background-color: #291b26f7;
 }
 .fnc-slider .m--blend-red .fnc-slide__inner {
   background-color: #c2029ef7;
 }
 .fnc-slider .m--blend-red .fnc-slide__mask-inner {
-  background-color: #990e13;
+  background-color: #3e1a36f7;
 }
 .fnc-slider .m--navbg-red {
-  background-color: #990e13;
+  background-color: #3e1a36f7;
 }
 .fnc-slider .m--blend-blue .fnc-slide__inner {
-  background-color: #59aecb;
+  background-color: #3a2751;
 }
 .fnc-slider .m--blend-blue .fnc-slide__mask-inner {
-  background-color: #2D7791;
+  background-color: #c59fbef7;
 }
 .fnc-slider .m--navbg-blue {
-  background-color: #2D7791;
+  background-color: #3a2751;
 }
 .fnc-slide {
   overflow: hidden;
@@ -515,7 +515,7 @@ body {
   top: 0;
   width: 540px;
   height: 100%;
-  background: linear-gradient(90deg, #14DCD6 0, #10E7BD 180px, #EF9C29 360px, #E76339 100%);
+  background: linear-gradient(90deg, #2a23f6f7 0, #7e23f6f7 180px, #c123f6f7 360px, #c2029ef7 100%);
   transition: transform 0.5s;
   transform: translate3d(-360px, 0, 0);
 }

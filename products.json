@@ -30,57 +30,85 @@
     {
         "id": 5,
         "name":" SMART WATCH LC1",
-        "price": 300,
+        "price": 255,
         "image": "image/5.png",
         "site":"https://www.google.com"
     },
     {
         "id": 6,
         "name":" SMART WATCH LC2",
-        "price": 200,
+        "price": 160,
         "image": "image/6.png",
         "site":"https://www.google.com"
     },
     {
         "id": 7,
         "name":" SMART WATCH LS4",
-        "price": 200,
+        "price": 180,
         "image": "image/7.png",
         "site":"https://www.google.com"
     },
     {
         "id": 8,
         "name":" SMART WATCH M10",
-        "price": 200,
+        "price": 300,
         "image": "image/8.png",
         "site":"https://www.google.com"
     },
     {
-        "id": 8,
+        "id": 9,
         "name":" SMART WATCH M10",
-        "price": 200,
+        "price": 190,
         "image": "image/3.png",
         "site":"https://www.google.com"
     },
     {
-        "id": 8,
+        "id": 10,
         "name":" SMART WATCH M10",
         "price": 200,
         "image": "image/1.png",
         "site":"https://www.google.com"
     },
     {
-        "id": 8,
+        "id": 11,
         "name":" SMART WATCH M10",
-        "price": 200,
+        "price": 240,
         "image": "image/2.png",
         "site":"https://www.google.com"
     },
     {
-        "id": 8,
+        "id": 12,
         "name":" SMART WATCH M10",
         "price": 200,
         "image": "image/6.png",
+        "site":"https://www.google.com"
+    },
+    {
+        "id": 13,
+        "name":" SMART WATCH X-1",
+        "price": 200,
+        "image": "image/1.png",
+        "site":"https://www.google.com"
+    },
+    {
+        "id": 14,
+        "name":" SMART WATCH S1",
+        "price": 250,
+        "image": "image/2.png",
+        "site":"https://www.google.com"
+    },
+    {
+        "id": 15,
+        "name":" SMART WATCH LC1",
+        "price": 290,
+        "image": "image/3.png",
+        "site":"https://www.google.com"
+    },
+    {
+        "id": 16,
+        "name":" SMART WATCH B1",
+        "price": 200,
+        "image": "image/4.png",
         "site":"https://www.google.com"
     }
 

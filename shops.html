@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- fonts -->
@@ -13,14 +14,49 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="h-watches">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-            <div class="title">FIND US HERE</div>
-            <div class="icon-cart" id="cart">
-                <a href="watches.html#cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                <span>0</span>
-            </div>
-        </header>
+      <header>
+        <div class="wrapper">                  
+              <!-- small menu -->
+              <div class="xs-menu-cont">
+              <a id="menutoggle"><i class="fa-solid fa-bars"></i></i> </a>
+                  <nav class="xs-menu displaynone">
+                      <ul>
+                          <li>
+                            <a href="#about">About</a>
+                          </li>
+                          <li>
+                            <a href="watches.html">Watches</a>
+                          </li>
+                          <li>
+                            <a href="shops.html">Shops</a></li>
+                          </li>
+                          <li>
+                            <a href="contact.html">Contact</a></li>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+              <nav class="menu">
+                <a href="index.html" id="logo"><img src="img/logo.svg" alt="logo"></a>
+                  <ul>
+                      <li>
+                        <a href="#about">ABOUT</a>
+                      </li>
+                      <li>
+                        <a href="watches.html">WATCHES</a>
+                      </li>
+                      <li>
+                        <a href="shops.html">SHOPS</a>
+                      </li>
+                      <li>
+                        <a href="contact.html">CONTACT</a></li>
+                      </li>
+                  </ul>
+                  <a href="watches.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+              </nav>
+          </div>
+        </div>
+    </header>
     </div>
     <main>
         <section class="wrapper">
@@ -36,31 +72,66 @@
             </div>
         </section>
     </main>
+    
     <div id="shops"></div>
+    <footer>
+      <section>
+          <div class="w-footer">
+            <div class="social">
+                <ul class="footer-social-media">
+                  <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                  <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                  <li><i class="fa-brands fa-snapchat fa-lg"></i></li>
+                  <li><i class="fa-brands fa-x-twitter fa-lg"></i></li>
+                  <li><i class="fa-brands fa-pinterest fa-lg"></i></li>
+                  <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+              </ul>
+            </div>
+            <div class="footer-bottom wrapper">
+              <div class="footer-logo">
+                <img src="img/logo2.svg" class="footer-logo-svg" alt="logo" />
+                <p>Our vision is to make the <br/>
+                best psmartwatches <br/>
+                for people</p>
+            </div>
+            <div>              
+                <ul>
+                    <li><h3>Information</h3></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Shops</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h3>Helpful Links</h3></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Travel & Condition</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h3>Contact Details</h3></li>
+                    <li><a href="#">+51 266 766 288</a></li>
+                    <li><a href="#">smart-1-2@gmail.com</a></li>
+                    <li><a href="#">Smart & Condition</a></li>
+                    <li><a href="#">www.imadniabou.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right">
+          <p>&copy; 2024 Smart - All rights reserved</p>
+        </div>
+            </div>
+     </section>
+  </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-    <script>
+    <script src="js/jquery.js"></script>
+    <script src="js/shops.js"></script>
 
-        // shops ajax 
-            $(document).ready(function(){
-                $(document).ajaxSend(function(){
-                    $("#shops").html('<div id="divcargando"><img src="img/cargando.gif" alt="cargando"><span>Loading...</span></div>');
-                });
-
-                $("#shops").load("shop1.html");
-
-                $("li>a").each(function(index) {
-                    $(this).click(function(){
-                        event.preventDefault();
-                        var indice = index+1;
-                        console.log(indice)
-                        $("#shops").load("shop"+indice+".html");
-                    });
-                })
-
-       
-
-        });
-    </script>
 </body>
 </html>

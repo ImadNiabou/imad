@@ -6,6 +6,7 @@
     <title>Watches</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -14,17 +15,53 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <header class="h-watches">
-                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-                <!-- <div class="title">ALL WATCHES</div> -->
-                <div class="icon-cart" id="cart">
-                    <a href="watches.html#cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <span>0</span>
+            <header>
+                <div class="wrapper">                  
+                      <!-- small menu -->
+                      <div class="xs-menu-cont">
+                      <a id="menutoggle"><i class="fa-solid fa-bars"></i></i> </a>
+                          <nav class="xs-menu displaynone">
+                              <ul>
+                                  <li>
+                                    <a href="index.html#about">About</a>
+                                  </li>
+                                  <li>
+                                    <a href="watches.html">Watches</a>
+                                  </li>
+                                  <li>
+                                    <a href="shops.html">Shops</a></li>
+                                  </li>
+                                  <li>
+                                    <a href="contact.html">Contact</a></li>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <nav class="menu">
+                        <a href="index.html" id="logo"><img src="img/logo.svg" alt="logo"></a>
+                          <ul>
+                              <li>
+                                <a href="index.html#about">ABOUT</a>
+                              </li>
+                              <li>
+                                <a href="watches.html">WATCHES</a>
+                              </li>
+                              <li>
+                                <a href="shops.html">SHOPS</a>
+                              </li>
+                              <li>
+                                <a href="contact.html">CONTACT</a></li>
+                              </li>
+                          </ul>
+                          <div class="icon-cart" id="cart">
+                            <a href="watches.html#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <span>0</span>
+                        </div>
+                      </nav>
+                  </div>
                 </div>
             </header>
-    <!-- arrow top -->
-            <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
-            <h1>ALL WATCHES</h1>
+            <h1 class="h1">ALL WATCHES</h1>
             <div class="listProduct">
     <!-- added by javascript -->
             </div>
@@ -33,10 +70,9 @@
             <h1>Cart</h1>
             <div class="listCart">
     <!-- added by javascript -->
-    
             </div>
-            <div>
-                <h3>Total: </h3>
+            <div class="total">
+                <!-- <h3>Total: </h3> -->
             </div>
             <div class="btn">
                 <button class="close">CLOSE</button>
@@ -44,52 +80,63 @@
             </div>
         </div>
     </div>
-
- 
     <footer>
         <section>
             <div class="w-footer">
-                <div>
-                    <img src="img/logo.svg" alt="logo" />
-                    <p>Our vision is to make the <br/>
-                    best place to live for people</p>
-                    <ul class="footer-social-media">
-                        <li><i class="fa-brands fa-square-facebook fa-xl"></i></li>
-                        <li><i class="fa-brands fa-square-instagram fa-xl"></i></li>
-                        <li><i class="fa-brands fa-square-x-twitter fa-xl"></i></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Information</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Explore</a></li>
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                <h3>Helpful Links</h3>
-                    <ul>
-                        <li><a href="#">Destination</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Travel & Condition</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                </div>
-                <div>
-                <h3>Contact Details</h3>
-                    <ul>
-                        <li><a href="#">+51 266 766 288</a></li>
-                        <li><a href="#">imadniabou@gmail.com</a></li>
-                        <li><a href="#">Travel & Condition</a></li>
-                        <li><a href="#">www.imadniabou.com</a></li>
-                    </ul>
-                </div>
-            </div>
+              <div class="social">
+                  <ul class="footer-social-media">
+                    <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                    <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                    <li><i class="fa-brands fa-snapchat fa-lg"></i></li>
+                    <li><i class="fa-brands fa-x-twitter fa-lg"></i></li>
+                    <li><i class="fa-brands fa-pinterest fa-lg"></i></li>
+                    <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+                </ul>
+              </div>
+              <div class="footer-bottom wrapper">
+                <div class="footer-logo">
+                  <img src="img/logo2.svg" class="footer-logo-svg" alt="logo" />
+                  <p>Our vision is to make the <br/>
+                  best psmartwatches <br/>
+                  for people</p>
+              </div>
+              <div>              
+                  <ul>
+                      <li><h3>Information</h3></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Watches</a></li>
+                      <li><a href="#">Shops</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><h3>Helpful Links</h3></li>
+                      <li><a href="#">Destination</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Travel & Condition</a></li>
+                      <li><a href="#">Privacy</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><h3>Contact Details</h3></li>
+                      <li><a href="#">+51 266 766 288</a></li>
+                      <li><a href="#">smart-1-2@gmail.com</a></li>
+                      <li><a href="#">Smart & Condition</a></li>
+                      <li><a href="#">www.imadniabou.com</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="copy-right">
+            <p>&copy; 2024 Smart - All rights reserved</p>
+          </div>
+              </div>
        </section>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>

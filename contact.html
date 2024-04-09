@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <div class="wrapper">                  
+                      <!-- small menu -->
+                      <div class="xs-menu-cont">
+                      <a id="menutoggle"><i class="fa-solid fa-bars"></i></i> </a>
+                          <nav class="xs-menu displaynone">
+                              <ul>
+                                  <li>
+                                    <a href="index.html#about">About</a>
+                                  </li>
+                                  <li>
+                                    <a href="watches.html">Watches</a>
+                                  </li>
+                                  <li>
+                                    <a href="Shops.html">Shops</a></li>
+                                  </li>
+                                  <li>
+                                    <a href="contact.html">Contact</a></li>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <nav class="menu">
+                        <a href="index.html" id="logo"><img src="img/logo.svg" alt="logo"></a>
+                          <ul>
+                              <li>
+                                <a href="index.html#about">ABOUT</a>
+                              </li>
+                              <li>
+                                <a href="watches.html">WATCHES</a>
+                              </li>
+                              <li>
+                                <a href="shops.html">SHOPS</a>
+                              </li>
+                              <li>
+                                <a href="contact.html">CONTACT</a></li>
+                              </li>
+                          </ul>
+                          <a href="watches.html#cart" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                      </nav>
+                  </div>
+                </div>
+            </header>
+            <main>
+                <div class="wrapper">
+                    <h1 class="h1">CONTACT US</h1>
+                    <div class="box-form">
+                        <form id="formulario" action="#" method="post" name="formulario">
+                            <div class="form-top">
+                                <div>
+                                    <p id="showText">* Enter a name...</p>
+                                </div>
+                                <div class="input-styles">
+                                    <label for="nombre">Name</label>
+                                    <input type="text" id="nombre" name="nombre"required value=""><br/>
+                                </div>
+                                <div>
+                                    <div class="apellido-1">
+                                        <label for="apellido">Last name</label>
+                                        <input type="text" id="apellido" name="apellido" required value=""><br/>
+                                    </div>
+                                    <div class="email-1">
+                                        <label for="email" class="label-email">Email</label>
+                                        <input type="email" id="email" required name="email" value="Enter your email..."><br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>¿How did you know us?</h2>
+                            <div class="promotion">
+                                <div class="promotion-1">
+                                    <input type="checkbox" id="nuestraWeb" class="Checked1 checkbox" name="web" value="">Offer website</input>
+                                    <input type="checkbox" id="revistas" class="Checked1 checkbox" name="revistas" value="">Magazins</input>
+                                    <input type="checkbox" id="redesSociales" class="Checked1 checkbox" name="redes" value="">Social media</input>
+                                    <input type="checkbox" class="Checked1 checkbox" id="checkOtros" name="otros" value="">Others</input>
+                                </div>
+                                <div>
+                                    <input type="text" class="Checked1" id="showOtros" name="otros" value="" placeholder="Fill in the data..."></input>
+                                </div>
+                                <div>
+                                    <h3> Choose one of the following options</h3>
+                                        <div class="promotion-2">
+                                            <input type="checkbox" class="checkbox" name="envio" value="">Send it to me home</input>
+                                            <input type="checkbox" class="checkbox" id="lopasareaRecoger" name="recoger" value="">I will pick it up</input>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="form-bottom">
+                                <div>
+                                    <p id="showText2">* Enter an address...</p>
+                                </div>
+                                <div class="input-styles">
+                                    <label for="direccion">Adress</label>
+                                    <input type="text" id="direccion" name="direccion" value=""><br/>
+                                </div>
+                                <div class="localidad">
+                                    <label for="localidad">Location</label>
+                                    <input type="text" id="localidad" name="localidad" value=""><br/>
+                                </div>
+                                <div class="provincia">
+                                    <label for="provincia" class="label-provincia">Province</label>
+                                    <input type="text" id="provincia" name="provincia" value=""><br/>
+                                </div>
+                            </div>
+
+                                <input class="btn-form" id="submit" type="submit" name="botonEnviar" value=" Submit">
+                        </form>
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+                <section>
+                    <div class="w-footer">
+                      <div class="social">
+                          <ul class="footer-social-media">
+                            <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                            <li><i class="fa-brands fa-facebook fa-lg"></i></li>
+                            <li><i class="fa-brands fa-snapchat fa-lg"></i></li>
+                            <li><i class="fa-brands fa-x-twitter fa-lg"></i></li>
+                            <li><i class="fa-brands fa-pinterest fa-lg"></i></li>
+                            <li><i class="fa-brands fa-youtube fa-lg"></i></li>
+                        </ul>
+                      </div>
+                      <div class="footer-bottom wrapper">
+                        <div class="footer-logo">
+                          <img src="img/logo2.svg" class="footer-logo-svg" alt="logo" />
+                          <p>Our vision is to make the <br/>
+                          best psmartwatches <br/>
+                          for people</p>
+                      </div>
+                      <div>              
+                          <ul>
+                              <li><h3>Information</h3></li>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Watches</a></li>
+                              <li><a href="#">Shops</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div>
+                          <ul>
+                              <li><h3>Helpful Links</h3></li>
+                              <li><a href="#">Destination</a></li>
+                              <li><a href="#">Support</a></li>
+                              <li><a href="#">Travel & Condition</a></li>
+                              <li><a href="#">Privacy</a></li>
+                          </ul>
+                      </div>
+                      <div>
+                          <ul>
+                              <li><h3>Contact Details</h3></li>
+                              <li><a href="#">+51 266 766 288</a></li>
+                              <li><a href="#">smart-1-2@gmail.com</a></li>
+                              <li><a href="#">Smart & Condition</a></li>
+                              <li><a href="#">www.imadniabou.com</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="copy-right">
+                    <p>&copy; 2024 Smart - All rights reserved</p>
+                  </div>
+                      </div>
+               </section>
+            </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $("#checkOtros").click(function () {
+            if ($("#checkOtros").is(":checked")) {
+            $("#showOtros").show("slow");
+            } else {
+            $("#showOtros").hide("slow");
+            }
+            });
+
+            // name vAlidate
+            $("#nombre").mouseleave(function(){
+            if ($("#nombre").val().length < 4 ) {
+                $("#showText").show("slow").css("color", "red");
+                $("#showText").show("slow").css("fontSize", "12px");
+
+            };
+            });
+
+            // VAlidacion dirección
+            $("#direccion").mouseleave(function(){
+            if ($("#direccion").val().length < 10 || !/\d/ ) {
+                $("#showText2").show("slow").css("color", "red");
+                $("#showText2").show("slow").css("fontSize", "12px");
+
+            };
+            });
+
+            // disabled inputs
+            $("#lopasareaRecoger").change(function () {
+            if ($(this).is(":checked")) {
+            $(".form-bottom input").prop("disabled", true).show("slow").css("background-color", "#c5d7ee");
+            } else {
+            $(".form-bottom input").prop("disabled", false).show("slow").css("background-color", "#f4f7fb");
+            }
+            });
+
+            // email
+            $("#email").mouseenter(function () {
+                $(this).attr("value", "");
+            });
+
+            // JQuery plugin
+                $("#formulario").validate({
+                    rules:{
+                        nombre:{
+                            required: true,
+                            minlength:4
+                        },
+                        apellido:"required",
+
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    },
+                    messages:{
+                        nombre:"Enter a valid name",
+                        apellido:"Enter a last name",
+                        email: "Enter a valid email"
+                    }
+                });
+        });
+    </script>
+</body>
+</html>
